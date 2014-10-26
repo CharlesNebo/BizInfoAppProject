@@ -169,9 +169,64 @@
                     <view key="view" contentMode="scaleToFill" id="2p1-0X-IfZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vL7-CP-uvc">
+                                <rect key="frame" x="0.0" y="100" width="320" height="419"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bO1-r1-AWu">
+                                <rect key="frame" x="0.0" y="519" width="328" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="mapZoom" id="KME-Vo-aPO">
+                                        <connections>
+                                            <action selector="mapZoomClicked:" destination="Fhb-E0-K1C" id="cJn-hq-AAF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2k-fq-1a7">
+                                <rect key="frame" x="114" y="519" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="jSk-Kk-zxR"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="mapType" id="ZoY-sR-rQX">
+                                        <connections>
+                                            <action selector="mapTypeClicked:" destination="Fhb-E0-K1C" id="AF1-Yu-o2L"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search here.." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oiI-MC-KSi">
+                                <rect key="frame" x="20" y="68" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bO1-r1-AWu" firstAttribute="leading" secondItem="vL7-CP-uvc" secondAttribute="leading" id="2GA-qs-KWq"/>
+                            <constraint firstItem="oiI-MC-KSi" firstAttribute="centerX" secondItem="vL7-CP-uvc" secondAttribute="centerX" id="51h-RK-Bhf"/>
+                            <constraint firstItem="oiI-MC-KSi" firstAttribute="leading" secondItem="2p1-0X-IfZ" secondAttribute="leading" constant="20" symbolic="YES" id="5Rr-vz-ZsE"/>
+                            <constraint firstItem="oiI-MC-KSi" firstAttribute="top" secondItem="HRH-RV-W8F" secondAttribute="bottom" constant="4" id="FFi-Pa-2L3"/>
+                            <constraint firstItem="vL7-CP-uvc" firstAttribute="leading" secondItem="2p1-0X-IfZ" secondAttribute="leading" id="OXQ-jc-VAI"/>
+                            <constraint firstItem="vL7-CP-uvc" firstAttribute="top" secondItem="oiI-MC-KSi" secondAttribute="bottom" constant="2" id="QRB-rX-fK1"/>
+                            <constraint firstItem="dro-6E-axA" firstAttribute="top" secondItem="bO1-r1-AWu" secondAttribute="bottom" constant="5" id="Wv0-Ka-WXU"/>
+                            <constraint firstAttribute="trailing" secondItem="oiI-MC-KSi" secondAttribute="trailing" constant="20" symbolic="YES" id="XIU-U4-L8w"/>
+                            <constraint firstItem="bO1-r1-AWu" firstAttribute="top" secondItem="vL7-CP-uvc" secondAttribute="bottom" id="gPG-iS-lHJ"/>
+                            <constraint firstAttribute="trailing" secondItem="bO1-r1-AWu" secondAttribute="trailing" constant="-8" id="nTk-cw-cmh"/>
+                            <constraint firstItem="q2k-fq-1a7" firstAttribute="leading" secondItem="2p1-0X-IfZ" secondAttribute="leading" constant="114" id="rTX-TY-ExO"/>
+                            <constraint firstItem="q2k-fq-1a7" firstAttribute="top" secondItem="bO1-r1-AWu" secondAttribute="top" id="xgS-w8-Cyr"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aGN-iw-Tki"/>
+                    <connections>
+                        <outlet property="_myMapView" destination="vL7-CP-uvc" id="Hmn-30-0QZ"/>
+                        <outlet property="mySearchText" destination="oiI-MC-KSi" id="aBD-CB-Emn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uG4-kX-nis" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    __myMapView.showsUserLocation = YES;
+    __myMapView.delegate = self;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,6 +37,36 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)mapZoomClicked:(id)sender
+{
+    MKUserLocation *userLocation = self._myMapView.userLocation;
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(
+                                                                   userLocation.location.coordinate, 20000,20000);
+    [self._myMapView setRegion:region animated:NO];
+    
+
+}
+
+- (IBAction)mapTypeClicked:(id)sender
+{
+    if (self._myMapView.mapType == MKMapTypeStandard)
+        self._myMapView.mapType = MKMapTypeSatellite;
+    else
+        self._myMapView.mapType = MKMapTypeStandard;
+    
+}
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    __myMapView.centerCoordinate = userLocation.location.coordinate;
+}
+
+
+
+
+
+
 
 /*
 #pragma mark - Navigation
