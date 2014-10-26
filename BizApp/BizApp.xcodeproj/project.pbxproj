@@ -14,13 +14,19 @@
 		22A8C95D19FBF8E800EA2987 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8C95C19FBF8E800EA2987 /* main.m */; };
 		22A8C96119FBF8E800EA2987 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8C96019FBF8E800EA2987 /* AppDelegate.m */; };
 		22A8C96419FBF8E800EA2987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A8C96219FBF8E800EA2987 /* Main.storyboard */; };
-		22A8C96719FBF8E800EA2987 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8C96619FBF8E800EA2987 /* ViewController.m */; };
 		22A8C96919FBF8E800EA2987 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A8C96819FBF8E800EA2987 /* Images.xcassets */; };
 		22A8C97019FBF8E800EA2987 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A8C96F19FBF8E800EA2987 /* XCTest.framework */; };
 		22A8C97119FBF8E800EA2987 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A8C95019FBF8E800EA2987 /* Foundation.framework */; };
 		22A8C97219FBF8E800EA2987 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A8C95419FBF8E800EA2987 /* UIKit.framework */; };
 		22A8C97A19FBF8E800EA2987 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22A8C97819FBF8E800EA2987 /* InfoPlist.strings */; };
 		22A8C97C19FBF8E800EA2987 /* BizAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8C97B19FBF8E800EA2987 /* BizAppTests.m */; };
+		22A8C98A19FBFC8B00EA2987 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8C98919FBFC8B00EA2987 /* CameraViewController.m */; };
+		22A8C98D19FBFD1600EA2987 /* CameraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8C98C19FBFD1600EA2987 /* CameraModel.m */; };
+		22A8C99019FBFD5B00EA2987 /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8C98F19FBFD5B00EA2987 /* MessagesViewController.m */; };
+		22A8C99319FBFDA500EA2987 /* MessagesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8C99219FBFDA500EA2987 /* MessagesModel.m */; };
+		22A8C99619FBFDD700EA2987 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8C99519FBFDD700EA2987 /* MapViewController.m */; };
+		22A8C99919FBFE1500EA2987 /* MapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A8C99819FBFE1500EA2987 /* MapModel.m */; };
+		22A8C99B19FCDA0300EA2987 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A8C99A19FCDA0300EA2987 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +51,25 @@
 		22A8C95F19FBF8E800EA2987 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		22A8C96019FBF8E800EA2987 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		22A8C96319FBF8E800EA2987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		22A8C96519FBF8E800EA2987 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		22A8C96619FBF8E800EA2987 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		22A8C96819FBF8E800EA2987 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		22A8C96E19FBF8E800EA2987 /* BizAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BizAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A8C96F19FBF8E800EA2987 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		22A8C97719FBF8E800EA2987 /* BizAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BizAppTests-Info.plist"; sourceTree = "<group>"; };
 		22A8C97919FBF8E800EA2987 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		22A8C97B19FBF8E800EA2987 /* BizAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BizAppTests.m; sourceTree = "<group>"; };
+		22A8C98819FBFC8B00EA2987 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = Camera/CameraViewController.h; sourceTree = "<group>"; };
+		22A8C98919FBFC8B00EA2987 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = Camera/CameraViewController.m; sourceTree = "<group>"; };
+		22A8C98B19FBFD1600EA2987 /* CameraModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraModel.h; sourceTree = "<group>"; };
+		22A8C98C19FBFD1600EA2987 /* CameraModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraModel.m; sourceTree = "<group>"; };
+		22A8C98E19FBFD5B00EA2987 /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessagesViewController.h; path = Messages/MessagesViewController.h; sourceTree = "<group>"; };
+		22A8C98F19FBFD5B00EA2987 /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessagesViewController.m; path = Messages/MessagesViewController.m; sourceTree = "<group>"; };
+		22A8C99119FBFDA500EA2987 /* MessagesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessagesModel.h; path = Messages/MessagesModel.h; sourceTree = "<group>"; };
+		22A8C99219FBFDA500EA2987 /* MessagesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessagesModel.m; path = Messages/MessagesModel.m; sourceTree = "<group>"; };
+		22A8C99419FBFDD700EA2987 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = Map/MapViewController.h; sourceTree = "<group>"; };
+		22A8C99519FBFDD700EA2987 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = Map/MapViewController.m; sourceTree = "<group>"; };
+		22A8C99719FBFE1500EA2987 /* MapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapModel.h; path = Map/MapModel.h; sourceTree = "<group>"; };
+		22A8C99819FBFE1500EA2987 /* MapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapModel.m; path = Map/MapModel.m; sourceTree = "<group>"; };
+		22A8C99A19FCDA0300EA2987 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A8C99B19FCDA0300EA2987 /* MapKit.framework in Frameworks */,
 				22A8C95319FBF8E800EA2987 /* CoreGraphics.framework in Frameworks */,
 				22A8C95519FBF8E800EA2987 /* UIKit.framework in Frameworks */,
 				22A8C95119FBF8E800EA2987 /* Foundation.framework in Frameworks */,
@@ -101,6 +119,7 @@
 		22A8C94F19FBF8E800EA2987 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22A8C99A19FCDA0300EA2987 /* MapKit.framework */,
 				22A8C95019FBF8E800EA2987 /* Foundation.framework */,
 				22A8C95219FBF8E800EA2987 /* CoreGraphics.framework */,
 				22A8C95419FBF8E800EA2987 /* UIKit.framework */,
@@ -115,8 +134,9 @@
 				22A8C95F19FBF8E800EA2987 /* AppDelegate.h */,
 				22A8C96019FBF8E800EA2987 /* AppDelegate.m */,
 				22A8C96219FBF8E800EA2987 /* Main.storyboard */,
-				22A8C96519FBF8E800EA2987 /* ViewController.h */,
-				22A8C96619FBF8E800EA2987 /* ViewController.m */,
+				22A8C98519FBFA9C00EA2987 /* Camera */,
+				22A8C98619FBFAAC00EA2987 /* Map */,
+				22A8C98719FBFABB00EA2987 /* Messages */,
 				22A8C96819FBF8E800EA2987 /* Images.xcassets */,
 				22A8C95719FBF8E800EA2987 /* Supporting Files */,
 			);
@@ -150,6 +170,39 @@
 				22A8C97819FBF8E800EA2987 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22A8C98519FBFA9C00EA2987 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				22A8C98B19FBFD1600EA2987 /* CameraModel.h */,
+				22A8C98C19FBFD1600EA2987 /* CameraModel.m */,
+				22A8C98819FBFC8B00EA2987 /* CameraViewController.h */,
+				22A8C98919FBFC8B00EA2987 /* CameraViewController.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		22A8C98619FBFAAC00EA2987 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				22A8C99719FBFE1500EA2987 /* MapModel.h */,
+				22A8C99819FBFE1500EA2987 /* MapModel.m */,
+				22A8C99419FBFDD700EA2987 /* MapViewController.h */,
+				22A8C99519FBFDD700EA2987 /* MapViewController.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		22A8C98719FBFABB00EA2987 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				22A8C99119FBFDA500EA2987 /* MessagesModel.h */,
+				22A8C99219FBFDA500EA2987 /* MessagesModel.m */,
+				22A8C98E19FBFD5B00EA2987 /* MessagesViewController.h */,
+				22A8C98F19FBFD5B00EA2987 /* MessagesViewController.m */,
+			);
+			name = Messages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22A8C96719FBF8E800EA2987 /* ViewController.m in Sources */,
+				22A8C99919FBFE1500EA2987 /* MapModel.m in Sources */,
+				22A8C98D19FBFD1600EA2987 /* CameraModel.m in Sources */,
+				22A8C99019FBFD5B00EA2987 /* MessagesViewController.m in Sources */,
+				22A8C99619FBFDD700EA2987 /* MapViewController.m in Sources */,
+				22A8C99319FBFDA500EA2987 /* MessagesModel.m in Sources */,
+				22A8C98A19FBFC8B00EA2987 /* CameraViewController.m in Sources */,
 				22A8C96119FBF8E800EA2987 /* AppDelegate.m in Sources */,
 				22A8C95D19FBF8E800EA2987 /* main.m in Sources */,
 			);
@@ -456,6 +514,7 @@
 				22A8C98119FBF8E800EA2987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22A8C98219FBF8E800EA2987 /* Build configuration list for PBXNativeTarget "BizAppTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +523,7 @@
 				22A8C98419FBF8E800EA2987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
